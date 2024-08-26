@@ -1,0 +1,66 @@
+body{
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: hsl(275, 100%, 97%);
+    font-family: "Work Sans", sans-serif;
+    /* scrollbar-gutter: stable; */
+}
+.card-main{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+.row1{
+    display: flex;
+    margin-bottom: 3rem;
+}
+#faq{
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+    font-size: 3rem;
+    padding-left: 1.5rem;
+    /* vertical-align: center; */
+}
+.section{
+    /* margin: 32px 0px;
+    margin-top: 32px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto; */
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: hsl(0, 0%, 90%);
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+.response{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .5s;
+}
+.response-par{
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    margin: 10px;
+    overflow: hidden;
+}
+.response.open{
+    grid-template-rows: 1fr;
+}
+.no-show{
+    display: none;
+}
+
+/* The display grid is being used for the animation effect */
